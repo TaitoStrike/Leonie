@@ -1,0 +1,243 @@
+/* Grundlegende Stileinstellungen für den gesamten Body */
+body {
+    margin: auto;
+    background-color: #17171c;
+    min-width: 47em;
+    font-size: 1.1em;
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+}
+
+/* Flexbox-Einstellungen für den Main-Bereich */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Flexbox-Einstellungen für Artikel und Nebenbereiche */
+aside, article {
+    flex: 1 1 50%;
+    margin: 0 auto; /* Zentriert die Elemente horizontal innerhalb des Containers */
+    text-align: center;
+    align-self: center;
+    
+}
+
+/* Stil für Absätze und Überschriften im Artikel */
+article p, h1, h2 {
+    margin: 0 5em;
+    text-align: center;
+}
+
+/* Ausnahme für Flex boxen um 100% einzunehmen */
+#flex100 {
+    flex: 0 0 100%
+}
+
+/* Stil für Google Maps Container */
+#googlemap {
+    background-color: #ffffff;
+    border-radius: 1em;
+    padding: 0.5em;
+    width: 30em;
+    height: 15em;
+    margin: 0 0.5em;
+}
+
+/* Stil für Hauptüberschrift */
+h1 {
+    font-size: 3.3em;
+}
+
+/* Stil für Unterüberschriften */
+h2 {
+    font-size: 2.3em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+/* Stil für den Header */
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0.5em;
+}
+
+/* Stil für die Navigation */
+nav {
+    padding: 12px;
+}
+
+/* Stil für den Footer */
+footer {
+    padding: 2em;
+}
+
+/* Stil für Tabellen */
+table {
+    margin: auto;
+    border-collapse: collapse; /* Entfernt doppelte Rahmen zwischen Zellen */
+}
+
+/* Stil für Tabellenüberschriften */
+th {
+    width: 25em;
+    text-align: left;
+    padding: 2em 0;
+}
+
+/* Stil für Tabellenzellen */
+td {
+    width: 25em;
+    padding: 0 0 2em 0;
+}
+
+/* Stil für Zellen mit vertikaler Ausrichtung oben */
+#top {
+    vertical-align: top;
+}
+
+/* Stil für Zellen mit zentraler Ausrichtung */
+#middle {
+    text-align: center;
+}
+
+/* Stil für Navigationszellen */
+nav td {
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Grundregeln für Links in der Navigation */
+nav a, nav a:hover, nav a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Grundregeln für Links im Footer */
+footer a, footer a:hover, footer a:visited {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* Stil für den aktuellen Link in der Navigation */
+#visit {
+    color: #b3b3b3;
+    font-weight: bold;
+}
+
+/* Stil für den Copyright-Text */
+#copyright_text {
+    font-size: 0.6em;
+    text-align: center;
+}
+
+/* Stil für Produktbilder */
+#pics_Productpage, #pics_overview {
+    width: 100%; /* Setzt die Breite auf 100% des Containers */
+    height: auto; /* Erhält das Seitenverhältnis der Bilder */
+}
+
+#pics_Costom {
+    padding auto;
+}
+
+/* Flexbox-Einstellungen für den Bereich "section" */
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Flexbox-Einstellungen für Container innerhalb von "section" */
+section > div {
+    flex: 1 4 18%;
+    padding: 5%; /* Abstand zwischen den flexiblen Elementen */
+    text-align: center;
+}
+
+/* Stil für Bilder in div-Containern */
+div img {
+    border-radius: 0.35em;
+}
+
+/* Container-Stil */
+.container {
+    background-color: #ffffff;
+    color: #17171c;
+    margin: auto;
+    padding: 2em;
+    border-radius: 0.5em;
+    width: 100%;
+    max-width: 40em;
+}
+
+/* Stil für Formulare */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Stil für Formular-Labels */
+label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+/* Stil für Eingabefelder und Textarea */
+input, textarea {
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 1px solid #dddddd;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+}
+
+/* Stil für Buttons */
+button {
+    padding: 0.75em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: #007BFF;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Stil für den Bild-Container und Überlagerungstext */
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.1em;
+    background: rgba(0, 0, 0, 0.6); /* Halbtransparenter Hintergrund für besseren Kontrast */
+    padding: 1em;
+    border-radius: 1em;
+    min-width: 39em;
+}
+
+/* Entfernt Standard-Abstände bei Absätzen innerhalb von div-Containern */
+div p {
+    margin: 0;
+}

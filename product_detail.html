@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Produkte</title>
+	</head>
+	<body>
+		
+		<!-- header with image title functioning as hyperlink to "startpage" -->
+		<header>
+			<a href="index.html">
+				<img src="pics\logo.jpg" alt="Logo" width="300em">
+			</a>
+		</header>
+		<!-- nav as menu bar -->
+		<nav>
+			<!-- table for the menu links -->
+			<table>
+				<tr>
+					<td>
+						<a href="overview.html">Dienstleistungen</a>
+					</td>
+					<td>
+						<a href="product_detail.html" id="visit">Produkte</a>
+					</td>
+					<td>
+						<a href="Custom.html">Custom&nbspMaterials</a>
+					</td>
+					<td>
+						<a href="about_us.html">About&nbspus</a>
+					</td>
+					<td>
+						<a href="calendar.html">Öffnungszeiten</a>
+					</td>
+					<td>
+						<a href="legal_notice.html">Impressum</a>
+					</td>
+				</tr>
+			</table>
+		</nav>
+		<main>
+			<article>
+				<br>
+				<h1>Produktübersicht</h1>
+				<br>
+				<section>
+					<div>
+						<img id="pics_Productpage" src="pics/betten.jpg" alt="Betten">
+						<br><br> Betten
+					</div>
+					<div>
+						<img id="pics_Productpage" src="pics/Regale_u_Schränke.jpg" alt="Regale und Schränke">
+						<br><br> Regale und Schränke
+					</div>
+					<div>
+						<img id="pics_Productpage" src="pics/Sideboads_u_Container.jpg" alt="Sideboads und Container">
+						<br><br> Sideboards und Container
+					</div>
+					<div>
+						<img id="pics_Productpage" src="pics/tische.jpg" alt="tische">
+						<br><br> Tische
+					</div>
+					<div>
+						<img id="pics_Productpage" src="pics/Stuehle.jpg" alt="Stuehle">
+						<br><br> Stühle
+					</div>
+					<div>
+						<img id="pics_Productpage" src="pics/textilien.jpg" alt="textilien">
+						<br><br> textielien
+					</div>
+				</section>
+				
+				<h2>Kontaktformular</h2>
+				
+				<br><br>
+				
+				<div class="container">
+					<form action="PLatzhalter.php" method="get">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required>
+						
+						<label for="email">E-Mail:</label>
+						<input type="email" id="email" name="email" required>
+						
+						<label for="message">Nachricht:</label>
+						<textarea id="message" name="message" rows="5" required></textarea>
+						
+						<button type="submit">Absenden</button>
+					</form>
+				</div>
+				
+			</article>
+		</main>
+		<footer>
+			<hr>
+			<!-- Table for all the footer text -->
+			<Table>
+				<tr>
+					<th>
+						Schreinerfarm GmbH
+					</th>
+					<th>
+						Service
+					</th>
+					<!-- rowspan so its the same size as the other td/th but in centered -->
+					<td rowspan="2">
+						Newsletter abonnieren<br>
+						<!-- textfield without form because its not working anyway -->
+						<input placeholder="E-Mail">
+					</td>
+				</tr>
+				<tr>
+					<td id="top">
+						B1 6 | 68159 Mannheim<br>
+						<br>
+						Tel. 06233 299199<br>
+						<br>
+						Öffnungszeiten<br>
+						Mo bis Do 07:30 - 17:00<br>
+						Fr 07:30 - 12:45<br>
+						Sa & So geschlossen<br>
+					</td>
+					<td id="top">
+						<!-- most of the links are not working, unnecessary -->
+						<a href="Error.html">AGB</a> <br>
+						<a href="Error.html">Datenschutzerklärung</a> <br>
+						<a href="legal_notice.html">Impressum</a> <br>
+						<a href="Error.html">Rückerstattungsrichtlinien</a> <br>
+						<a href="Error.html">Versand & Lieferung</a> <br>
+						<a href="Error.html">Kontakt</a> <br>
+					</td>
+				</tr>
+			</Table>
+			<hr>
+			<!-- copyright text with my name and registration number -->
+			<p id="copyright_text">
+				© 2024, Schreinerfarm Onlineshop Powered by Leonie Arzheimer; Matrikelnummer 3014295
+			</p>
+		</footer>
+	</body>
+</html>
